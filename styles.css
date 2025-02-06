@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color:blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url("https://img.freepik.com/premium-photo/this-photo-showcases-vast-gym-equipped-with-multitude-exercise-machines-perfect-allencompassing-fitness-routine-workout-fitness-gym-ai-generated_538213-18437.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+
+/* Ensures main content expands to push footer down */
+main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline-block;
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 150px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu li {
+    display: block;
+}
+
+.dropdown-menu a {
+    padding: 10px;
+    color: white;
+    display: block;
+}
+.left {
+    display: inline-block;
+    /* border: 2px solid red; */
+    position: absolute;
+    left: 60px;
+    top: 20px;}
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer a {
+    color: #f8c146;
+    text-decoration: none;
+}
+.left img {
+    border-radius: 80px;
+    width: 126px;
+    filter: invert(100%);
+    }
+    .left div {
+    line-height: 19px;
+    font-size: 26px;
+    text-align: center;
+    }
+    .container {
+    border: 2px solid white;
+    margin: 70px 60px;
+    padding: 55px;
+    width: 33%;
+    border-radius: 28px;
+    background: url('https://img.freepik.com/free-photo/3d-grunge-concrete-interior-with-spotlights_1048-16924.jpg');
+    background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      left: 400px;
+    }
+    .form-group input {
+    font-family: 'Baloo Bhai', cursive;
+    text-align: center;
+    display: block;
+    width: 508px;
+    padding: 1px;
+    border: 2px solid black;
+    margin: 11px auto;
+    font-size: 25px;
+    border-radius: 8px;
+    }
+    .container h1 {
+    text-align: center;
+    }
+    .container button {
+    display: block;
+    width: 54%;
+    margin: 20px auto;
+    }
+    .btn {
+    font-family: 'Baloo Bhai', cursive;
+    margin: 0px 9px;
+    background-color: black;
+    color: white;
+    padding: 4px 14px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    }
+    .btn:hover {
+    background-color: rgb(31, 30, 30);
+    }
