@@ -2,7 +2,7 @@ trigger:
 - main
 
 pool:
-  name: disha_devops
+  name: Default
 
 steps:
 - task: CopyFiles@2
