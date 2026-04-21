@@ -4,64 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GYM Site</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #1e1e2f, #2c3e50);
-            color: white;
-            text-align: center;
-        }
-        header {
-            padding: 20px;
-            font-size: 28px;
-            font-weight: bold;
-            background: #000;
-        }
-        section {
-            margin-top: 100px;
-        }
-        h1 {
-            font-size: 48px;
-        }
-        p {
-            font-size: 20px;
-        }
-        .btn {
-            margin-top: 20px;
-            padding: 12px 25px;
-            font-size: 16px;
-            border: none;
-            background: #ff4b2b;
-            color: white;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .btn:hover {
-            background: #ff416c;
-        }
-        footer {
-            margin-top: 100px;
-            padding: 15px;
-            background: #000;
-            font-size: 14px;
-        }
-    </style>
+
+    <!-- Link your CSS file -->
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-<header>
-    GYM Fitness Club
-</header>
+<!-- Navigation Bar -->
+<nav>
+    <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li class="dropdown">
+            <a href="#">Services</a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Workout Plans</a></li>
+                <li><a href="#">Diet Plans</a></li>
+                <li><a href="#">Personal Training</a></li>
+            </ul>
+        </li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
 
-<section>
-    <h1>Welcome to GYM_site 💪</h1>
-    <p>Transform your body. Build your strength. Stay healthy.</p>
-    <button class="btn">Join Now</button>
-</section>
+<!-- Logo section -->
+<div class="left">
+    <img src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png" alt="Gym Logo">
+    <div>GYM Site</div>
+</div>
 
+<!-- Main Content -->
+<main>
+    <div class="container">
+        <h1>Join the Best Gym</h1>
+
+        <form>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Locality">
+            </div>
+
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</main>
+
+<!-- Footer -->
 <footer>
-    © 2026 GYM_site | Developed by Disha Kushwah
+    <p>© 2026 GYM Site | Developed by Disha Kushwah</p>
+    <p><a href="#">Privacy Policy</a></p>
 </footer>
 
 </body>
