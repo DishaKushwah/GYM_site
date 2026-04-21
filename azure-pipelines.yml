@@ -19,6 +19,6 @@ steps:
 # Deploy to Azure App Service (CD)
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'azure_conn'
+    azureSubscription: 'azure_con'
     appName: 'NewFit'
     package: '$(Build.ArtifactStagingDirectory)'
