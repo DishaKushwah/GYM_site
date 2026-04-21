@@ -2,9 +2,10 @@ trigger:
 - main
 
 pool:
-  name: Default
+  name: Default   # your self-hosted agent
 
 steps:
+# Build/Package (CI)
 - task: CopyFiles@2
   inputs:
     Contents: '**'
@@ -14,3 +15,10 @@ steps:
   inputs:
     pathToPublish: '$(Build.ArtifactStagingDirectory)'
     artifactName: 'drop'
+
+# Deploy to Azure App Service (CD)
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'azure_conn'
+    appName: 'NewFit'
+    package: '$(Build.ArtifactStagingDirectory)'
